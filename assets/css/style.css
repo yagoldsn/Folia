@@ -1,26 +1,98 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-  --cor-fundo: #F9E4C8;
-  --cor-destaque: #FFD447;
-  --cor-base: #8B5E3C;
-  --cor-acento: #C94A3F;
-  --cor-contraste: #2C3E50;
-  --cor-texto-claro: #FFFFFF;
+  /* 🎨 Paleta Principal */
+  --color-black: #000000;           /* Texto sobre fundo claro */
+  --color-burnt-orange: #AB5A27;    /* Destaques, botões, links */
+  --color-tan: #CEAF95;             /* Texto principal sobre fundo escuro */
+  --color-coffee: #684537;          /* Elementos secundários, bordas */
+  --color-smoky-black: #171210;     /* Fundo principal */
+
+
+  /*
+Fundo principal: --color-smoky-black: #171210; Ideal para fundo escuro elegante e neutro
+Texto principal: --color-tan: #CEAF95;    Ótimo contraste com fundo escuro, leitura suave  
+
+Destaques e botões: --color-burnt-orange: #AB5A27; Botões, links, ícones de ação – chama atenção
+Elementos secundários: --color-coffee: #684537; Bordas, sombras, detalhes sutis
+Texto sobre fundo claro: --color-black: #000000; Para textos sobre fundo claro ou elementos neutros
+
+
+  */
+
+  /* 🌈 Gradientes */
+  --gradient-top: linear-gradient(0deg, var(--color-black), var(--color-burnt-orange), var(--color-tan), var(--color-coffee), var(--color-smoky-black));
+  --gradient-right: linear-gradient(90deg, var(--color-black), var(--color-burnt-orange), var(--color-tan), var(--color-coffee), var(--color-smoky-black));
+  --gradient-bottom: linear-gradient(180deg, var(--color-black), var(--color-burnt-orange), var(--color-tan), var(--color-coffee), var(--color-smoky-black));
+  --gradient-left: linear-gradient(270deg, var(--color-black), var(--color-burnt-orange), var(--color-tan), var(--color-coffee), var(--color-smoky-black));
+  --gradient-top-right: linear-gradient(45deg, var(--color-black), var(--color-burnt-orange), var(--color-tan), var(--color-coffee), var(--color-smoky-black));
+  --gradient-bottom-right: linear-gradient(135deg, var(--color-black), var(--color-burnt-orange), var(--color-tan), var(--color-coffee), var(--color-smoky-black));
+  --gradient-top-left: linear-gradient(225deg, var(--color-black), var(--color-burnt-orange), var(--color-tan), var(--color-coffee), var(--color-smoky-black));
+  --gradient-bottom-left: linear-gradient(315deg, var(--color-black), var(--color-burnt-orange), var(--color-tan), var(--color-coffee), var(--color-smoky-black));
+  --gradient-radial: radial-gradient(var(--color-black), var(--color-burnt-orange), var(--color-tan), var(--color-coffee), var(--color-smoky-black));
+}
+html {
+  scroll-behavior: smooth; /* Adiciona rolagem suave para âncoras */
 }
 
+body {
+  color: var(--color-tan);
+  font-family: Arial, sans-serif;
+    background-color:var(--color-coffee);
 
-body{
-    margin: 10px;
-    background-color: var(--cor-fundo);
+;
 }
 
-nav.navbar {
-    background-color: var(--cor-base);
-    padding: 10px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+main {
+  /* padding-top: 120px; */
+}
+section {
+  /* border-bottom: 1px solid var(--cor-contraste); */
+  min-height: 100vh;
+  padding: 5px;
+  scroll-margin-top: 120px;
+}
+header {
+  height: 120px;
+}
+
+.navbar {
+  background: var(--color-smoky-black);
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar .nav-list {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar .item-nav {
+  font-size: 1.5rem;
+  list-style: none;
+  margin: 0 15px;
+}
+.navbar .item-nav a {
+  color: var(--tan);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar img {
+  height: 100px;
+  margin-left: 20px;
+}
+
+#galeria img {
+  height: 300px;
+  /* margin: 10px; */
 }
