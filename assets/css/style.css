@@ -40,15 +40,16 @@ html {
 }
 
 body {
-  color: var(--color-tan);
+  color: var(--color-smoky-black);
   font-family: Arial, sans-serif;
-    background-color:var(--color-coffee);
+    background-color:var(--color-smoky-black);
 
 ;
 }
 
 main {
   /* padding-top: 120px; */
+  color: var(--color-tan);
 }
 section {
   /* border-bottom: 1px solid var(--cor-contraste); */
@@ -61,7 +62,7 @@ header {
 }
 
 .navbar {
-  background: var(--color-smoky-black);
+  background: var(--color-tan);
   left: 0;
   position: fixed;
   top: 0;
