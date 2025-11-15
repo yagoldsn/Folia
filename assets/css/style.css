@@ -2,16 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 
 :root {
   /* 🎨 Paleta Principal */
-  --color-black: #000000;           /* Texto sobre fundo claro */
-  --color-burnt-orange: #AB5A27;    /* Destaques, botões, links */
-  --color-tan: #CEAF95;             /* Texto principal sobre fundo escuro */
-  --color-coffee: #684537;          /* Elementos secundários, bordas */
-  --color-smoky-black: #171210;     /* Fundo principal */
-
+  --color-black: #000000; /* Texto sobre fundo claro */
+  --color-burnt-orange: #ab5a27; /* Destaques, botões, links */
+  --color-tan: #ceaf95; /* Texto principal sobre fundo escuro */
+  --color-coffee: #684537; /* Elementos secundários, bordas */
+  --color-smoky-black: #171210; /* Fundo principal */
 
   /*
 Fundo principal: --color-smoky-black: #171210; Ideal para fundo escuro elegante e neutro
@@ -25,15 +25,77 @@ Texto sobre fundo claro: --color-black: #000000; Para textos sobre fundo claro o
   */
 
   /* 🌈 Gradientes */
-  --gradient-top: linear-gradient(0deg, var(--color-black), var(--color-burnt-orange), var(--color-tan), var(--color-coffee), var(--color-smoky-black));
-  --gradient-right: linear-gradient(90deg, var(--color-black), var(--color-burnt-orange), var(--color-tan), var(--color-coffee), var(--color-smoky-black));
-  --gradient-bottom: linear-gradient(180deg, var(--color-black), var(--color-burnt-orange), var(--color-tan), var(--color-coffee), var(--color-smoky-black));
-  --gradient-left: linear-gradient(270deg, var(--color-black), var(--color-burnt-orange), var(--color-tan), var(--color-coffee), var(--color-smoky-black));
-  --gradient-top-right: linear-gradient(45deg, var(--color-black), var(--color-burnt-orange), var(--color-tan), var(--color-coffee), var(--color-smoky-black));
-  --gradient-bottom-right: linear-gradient(135deg, var(--color-black), var(--color-burnt-orange), var(--color-tan), var(--color-coffee), var(--color-smoky-black));
-  --gradient-top-left: linear-gradient(225deg, var(--color-black), var(--color-burnt-orange), var(--color-tan), var(--color-coffee), var(--color-smoky-black));
-  --gradient-bottom-left: linear-gradient(315deg, var(--color-black), var(--color-burnt-orange), var(--color-tan), var(--color-coffee), var(--color-smoky-black));
-  --gradient-radial: radial-gradient(var(--color-black), var(--color-burnt-orange), var(--color-tan), var(--color-coffee), var(--color-smoky-black));
+  --gradient-top: linear-gradient(
+    0deg,
+    var(--color-black),
+    var(--color-burnt-orange),
+    var(--color-tan),
+    var(--color-coffee),
+    var(--color-smoky-black)
+  );
+  --gradient-right: linear-gradient(
+    90deg,
+    var(--color-black),
+    var(--color-burnt-orange),
+    var(--color-tan),
+    var(--color-coffee),
+    var(--color-smoky-black)
+  );
+  --gradient-bottom: linear-gradient(
+    180deg,
+    var(--color-black),
+    var(--color-burnt-orange),
+    var(--color-tan),
+    var(--color-coffee),
+    var(--color-smoky-black)
+  );
+  --gradient-left: linear-gradient(
+    270deg,
+    var(--color-black),
+    var(--color-burnt-orange),
+    var(--color-tan),
+    var(--color-coffee),
+    var(--color-smoky-black)
+  );
+  --gradient-top-right: linear-gradient(
+    45deg,
+    var(--color-black),
+    var(--color-burnt-orange),
+    var(--color-tan),
+    var(--color-coffee),
+    var(--color-smoky-black)
+  );
+  --gradient-bottom-right: linear-gradient(
+    135deg,
+    var(--color-black),
+    var(--color-burnt-orange),
+    var(--color-tan),
+    var(--color-coffee),
+    var(--color-smoky-black)
+  );
+  --gradient-top-left: linear-gradient(
+    225deg,
+    var(--color-black),
+    var(--color-burnt-orange),
+    var(--color-tan),
+    var(--color-coffee),
+    var(--color-smoky-black)
+  );
+  --gradient-bottom-left: linear-gradient(
+    315deg,
+    var(--color-black),
+    var(--color-burnt-orange),
+    var(--color-tan),
+    var(--color-coffee),
+    var(--color-smoky-black)
+  );
+  --gradient-radial: radial-gradient(
+    var(--color-black),
+    var(--color-burnt-orange),
+    var(--color-tan),
+    var(--color-coffee),
+    var(--color-smoky-black)
+  );
 }
 html {
   scroll-behavior: smooth; /* Adiciona rolagem suave para âncoras */
@@ -42,9 +104,8 @@ html {
 body {
   color: var(--color-smoky-black);
   font-family: Arial, sans-serif;
-    background-color:var(--color-smoky-black);
+  background-color: var(--color-smoky-black);
 
-;
 }
 
 main {
@@ -61,13 +122,10 @@ header {
   height: 120px;
 }
 
-#destaques{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  overflow: hidden;
-
+.titulo{
+  text-align: center;
+  margin: 15px;
+  color: var(--color-burnt-orange);
 }
 
 .navbar {
@@ -102,49 +160,103 @@ header {
   margin-left: 20px;
 }
 
-#galeria img {
-  height: 300px;
-  /* margin: 10px; */
-}
-
-
 /*inicio carrosel*/
-.carrossel {
-   position: relative;
-  width: 100%; /* ou 100% se quiser responsivo */
+
+.slider {
+  margin: 0 auto;
+  width: 800px;
+  height: 100vh;
   overflow: hidden;
-  margin: auto;
-
 }
 
-.carrossel-imagens {
+.slides {
+  /* animation: slideAnimation 16s infinite; */
   display: flex;
-  width: 100%;
-  transition: transform 0.5s ease-in-out;
+  height: 70vh;
+  width: 400%;
 }
 
-.carrossel-imagens img {
-  width: 100%;
-  flex-shrink: 0;
-  height: 400px;
-  object-fit: contain;
+.slides input {
+  display: none;
 }
 
+.slide{
+  position: relative;
+  transition: 2s;
+  width: 25%;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} 
 
-button.prev, button.next {
+.manual-navigation {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  font-size: 2rem;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+.manual-btn{
+  border: 2px solid #fff ;
+  padding: 5px;
+  border-radius: 10px;
   cursor: pointer;
-  padding: 10px;
+  transition: 1s;
+}
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+.manual-btn:hover{
+  background: #fff;
 }
 
-button.prev { left: 10px; }
-button.next { right: 10px; }
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+#radio3:checked ~ .first{
+  margin-left: -50%;
+}
+#radio4:checked ~ .first{
+  margin-left: -75%;
+}
 
-
+.navigation-auto div{
+  border: 2px solid #20a6ff  ;  
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer; 
+  transition: 1s;
+}
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 597px;
+}
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #fff;
+}
+#radio14:checked ~ .navigation-auto .auto-btn4{
+  background: #fff;
+}
 /*Fim carrosel*/
+
+.texto{
+  margin: 10rem;
+  text-align: justify;
+}

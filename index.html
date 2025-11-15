@@ -13,7 +13,7 @@
           <li class="item-nav">
             <img src="./assets/imagens/logo/logo.png" alt="" />
           </li>
-          <li class="item-nav"><a href="#inicio">Início</a></li>
+          <li class="item-nav"><a href="index.html">Início</a></li>
           <li class="item-nav"><a href="#destaques">Destaques Folia</a></li>
           <li class="item-nav"><a href="#musicas">Músicas e canticos</a></li>
           <li class="item-nav"><a href="#sobre">Sobre</a></li>
@@ -24,32 +24,64 @@
 
     <main>
       <section id="destaques">
-        <h1>Destaques Folia</h1>
-        <div class="carrosel">
-          <div class="carrossel-imagens">
-            <img
-              src="./assets/imagens/galeria/Imagem do WhatsApp de 2024-12-06 à(s) 18.50.49_74902e1e.jpg"
-            />
-            <img
-              src="./assets/imagens/galeria/Imagem do WhatsApp de 2025-01-12 à(s) 17.34.05_e722b1b8.jpg"
-            />
-            <img
-              src="./assets/imagens/galeria/Imagem do WhatsApp de 2025-01-25 à(s) 11.28.55_374079b8.jpg"
-            />
+        <div class="slider">
+          <h1 class="titulo">Destaques Folia</h1>
+          <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+
+            <!-- Slide Imagens -->
+
+            <div class="slide first">
+              <img
+                src="./assets/imagens/galeria/Imagem do WhatsApp de 2024-12-06 à(s) 18.50.49_74902e1e.jpg"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./assets/imagens/galeria/Imagem do WhatsApp de 2025-01-12 à(s) 17.34.05_e722b1b8.jpg"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./assets/imagens/galeria/Imagem do WhatsApp de 2025-01-25 à(s) 11.28.55_374079b8.jpg"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./assets/imagens/galeria/Imagem do WhatsApp de 2024-12-29 à(s) 19.53.26_0a9b3f8f.jpg"
+              />
+            </div>
+            <!-- fim Slide Imagens -->
+
+            <!-- Navigation auto -->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
           </div>
-          <button class="prev">⟨</button>
-          <button class="next">⟩</button>
+          <!-- Manual Navigation -->
+          <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
         </div>
       </section>
+
       <section id="historia">
-        <h1>HISTORIA DA FOLIA</h1>
+        <h1 class="titulo">HISTORIA DA FOLIA</h1>
         <h1>Folia de Reis do Caboclo</h1>
         <p>
           A Folia de Reis do Caboclo é uma manifestação cultural tradicional
           brasileira que celebra a visita dos Três Reis Magos ao menino Jesus.
-          Esta folia é caracterizada por músicas, danças e encenações que
-          retratam a história dos Reis Magos, além de elementos culturais
-          regionais.
+          Esta folia é caractizada por músicas, danças e encenações que retratam
+          a história dos Reis Magos, além de elementos culturais regionais.
         </p>
         <p>
           Originária do período colonial, a Folia de Reis do Caboclo é
@@ -67,28 +99,31 @@
       </section>
 
       <section id="musicas">
-        <h1>Músicas e Canticos</h1>
-        <p>
-          As músicas e cânticos da Folia de Reis do Caboclo são uma parte
-          essencial da celebração, transmitindo a história dos Reis Magos e a
-          devoção religiosa associada à festividade. Essas canções são
-          geralmente alegres e rítmicas, incentivando a participação do público.
-        </p>
-        <p>
-          Algumas das músicas mais tradicionais incluem "Os Reis Magos", "Bate o
-          Sino" e "Folia de Reis". As letras dessas canções frequentemente
-          narram a jornada dos Reis Magos, suas oferendas ao menino Jesus e a
-          importância da fé cristã.
-        </p>
-        <p>
-          Além das músicas tradicionais, os foliões também podem incorporar
-          elementos musicais regionais, como ritmos folclóricos e instrumentos
-          típicos, enriquecendo a experiência cultural da folia.
-        </p>
+        <h1 class="titulo">Músicas e Canticos</h1>
+        <div class="texto">
+          <p>
+            As músicas e cânticos da Folia de Reis do Caboclo são uma parte
+            essencial da celebração, transmitindo a história dos Reis Magos e a
+            devoção religiosa associada à festividade. Essas canções são
+            geralmente alegres e rítmicas, incentivando a participação do
+            público.
+          </p>
+          <p>
+            Algumas das músicas mais tradicionais incluem "Os Reis Magos", "Bate
+            o Sino" e "Folia de Reis". As letras dessas canções frequentemente
+            narram a jornada dos Reis Magos, suas oferendas ao menino Jesus e a
+            importância da fé cristã.
+          </p>
+          <p>
+            Além das músicas tradicionais, os foliões também podem incorporar
+            elementos musicais regionais, como ritmos folclóricos e instrumentos
+            típicos, enriquecendo a experiência cultural da folia.
+            </p>
+        </div>
       </section>
 
       <section id="sobre">
-        <h1>Sobre a Folia de Reis do Caboclo</h1>
+        <h1 class="titulo">Sobre a Folia de Reis do Caboclo</h1>
         <p>
           A Folia de Reis do Caboclo é uma expressão cultural rica que reflete a
           diversidade e a religiosidade do Brasil. Com raízes profundas na
