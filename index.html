@@ -3,147 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Folia de Reis do Caboclo</title>
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <ul class="nav-list">
-          <li class="item-nav">
-            <img src="./assets/imagens/logo/logo.png" alt="" />
-          </li>
-          <li class="item-nav"><a href="index.html">Início</a></li>
-          <li class="item-nav"><a href="#destaques">Destaques Folia</a></li>
-          <li class="item-nav"><a href="#musicas">Músicas e canticos</a></li>
-          <li class="item-nav"><a href="#sobre">Sobre</a></li>
-          <li class="item-nav"><a href="#contato">Contato</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-
-    <main>
-      <section id="destaques">
-        <div class="slider">
-          <h1 class="titulo">Destaques Folia</h1>
-          <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1" />
-            <input type="radio" name="radio-btn" id="radio2" />
-            <input type="radio" name="radio-btn" id="radio3" />
-            <input type="radio" name="radio-btn" id="radio4" />
-
-            <!-- Slide Imagens -->
-
-            <div class="slide first">
-              <img
-                src="./assets/imagens/galeria/Imagem do WhatsApp de 2024-12-06 à(s) 18.50.49_74902e1e.jpg"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/imagens/galeria/Imagem do WhatsApp de 2025-01-12 à(s) 17.34.05_e722b1b8.jpg"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/imagens/galeria/Imagem do WhatsApp de 2025-01-25 à(s) 11.28.55_374079b8.jpg"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/imagens/galeria/Imagem do WhatsApp de 2024-12-29 à(s) 19.53.26_0a9b3f8f.jpg"
-              />
-            </div>
-            <!-- fim Slide Imagens -->
-
-            <!-- Navigation auto -->
-            <div class="navigation-auto">
-              <div class="auto-btn1"></div>
-              <div class="auto-btn2"></div>
-              <div class="auto-btn3"></div>
-              <div class="auto-btn4"></div>
-            </div>
-          </div>
-          <!-- Manual Navigation -->
-          <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-          </div>
-        </div>
-      </section>
-
-      <section id="historia">
-        <h1 class="titulo">HISTORIA DA FOLIA</h1>
-        <h1>Folia de Reis do Caboclo</h1>
-        <p>
-          A Folia de Reis do Caboclo é uma manifestação cultural tradicional
-          brasileira que celebra a visita dos Três Reis Magos ao menino Jesus.
-          Esta folia é caractizada por músicas, danças e encenações que retratam
-          a história dos Reis Magos, além de elementos culturais regionais.
-        </p>
-        <p>
-          Originária do período colonial, a Folia de Reis do Caboclo é
-          especialmente popular em regiões como Minas Gerais, São Paulo e Goiás.
-          Durante as festividades, os participantes, conhecidos como foliões,
-          vestem trajes coloridos e carregam instrumentos musicais como violas,
-          tambores e pandeiros.
-        </p>
-        <p>
-          As apresentações geralmente ocorrem entre o Natal e o Dia de Reis (6
-          de janeiro), envolvendo visitas a casas, igrejas e praças públicas. A
-          folia é uma expressão de fé, alegria e tradição, reunindo comunidades
-          em torno da celebração religiosa e cultural.
-        </p>
-      </section>
-
-      <section id="musicas">
-        <h1 class="titulo">Músicas e Canticos</h1>
-        <div class="texto">
-          <p>
-            As músicas e cânticos da Folia de Reis do Caboclo são uma parte
-            essencial da celebração, transmitindo a história dos Reis Magos e a
-            devoção religiosa associada à festividade. Essas canções são
-            geralmente alegres e rítmicas, incentivando a participação do
-            público.
-          </p>
-          <p>
-            Algumas das músicas mais tradicionais incluem "Os Reis Magos", "Bate
-            o Sino" e "Folia de Reis". As letras dessas canções frequentemente
-            narram a jornada dos Reis Magos, suas oferendas ao menino Jesus e a
-            importância da fé cristã.
-          </p>
-          <p>
-            Além das músicas tradicionais, os foliões também podem incorporar
-            elementos musicais regionais, como ritmos folclóricos e instrumentos
-            típicos, enriquecendo a experiência cultural da folia.
-            </p>
-        </div>
-      </section>
-
-      <section id="sobre">
-        <h1 class="titulo">Sobre a Folia de Reis do Caboclo</h1>
-        <p>
-          A Folia de Reis do Caboclo é uma expressão cultural rica que reflete a
-          diversidade e a religiosidade do Brasil. Com raízes profundas na
-          história colonial, essa manifestação cultural continua a ser celebrada
-          com entusiasmo em várias regiões do país.
-        </p>
-        <p>
-          Além de sua importância religiosa, a folia também desempenha um papel
-          social significativo, promovendo a união comunitária e a preservação
-          das tradições culturais. Através das músicas, danças e encenações, a
-          Folia de Reis do Caboclo mantém viva a memória histórica e cultural do
-          Brasil.
-        </p>
-      </section>
-    </main>
 
     <footer>
       <p>&copy; 2024 Folia de Reis do Caboclo</p>
     </footer>
 
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="./assets/javascript/scripts.js"></script>
   </body>
 </html>
