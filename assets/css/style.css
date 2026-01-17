@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
 }
 
 :root {
@@ -110,7 +109,7 @@ body {
 
 main {
   /* padding-top: 120px; */
-  color: var(--color-tan);
+  
 }
 section {
   /* border-bottom: 1px solid var(--cor-contraste); */
@@ -122,3 +121,13 @@ header {
   height: 120px;
 }
 
+.navbar{
+  background-color: var(--color-burnt-orange) ;
+}
+.navbar img{
+  height: 90px;
+}
+
+.navbar .nav-link{
+  color: var(--color-tan);
+}
