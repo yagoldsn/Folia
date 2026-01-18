@@ -141,3 +141,10 @@ header {
 .btn{
   background-color: var(--color-burnt-orange);
 }
+
+.mx-auto.pt-5 {
+  max-width: 700px;
+  padding-top: 56px;
+  text-align: justify;
+  margin: 0 auto;
+}
