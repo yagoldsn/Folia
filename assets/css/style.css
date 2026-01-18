@@ -123,14 +123,16 @@ header {
 }
 
 .navbar{
-  background-color: var(--color-burnt-orange) ;
+  background: var(--color-tan);
+  display: flex;
 }
 .navbar img{
   height: 90px;
 }
 
 .navbar .nav-link{
-  color: var(--color-tan);
+  /* color: var(--color-tan); */
+  color: var(--color-burnt-orange);
 }
 
 .text-center {
